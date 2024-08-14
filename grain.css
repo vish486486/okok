@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    border: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.whole-website {
+    min-height: 100%;
+}
+
+/* first-page */
+
+.first-page {
+    position: relative;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grain {
+    height: 100%;
+    width: 100%;
+}
+
+.h1 {
+    position: absolute;
+    min-width: 50%;
+    border: 5px solid white;
+    border-top: none;
+    text-align: center;
+    padding: 3%;
+}
+
+.h1 h1 {
+    font-size: 5rem;
+    color: white;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    letter-spacing: 80px;
+    position: relative;
+    top: 10px;
+}
+
+.h1 p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 2.7rem;
+    position: relative;
+    top: 9px;
+}
+
+.lower {
+    position: absolute;
+    height: 100%;
+    min-width: 50%;
+    border: 5px solid white;
+    border-bottom: none;
+    text-align: center;
+    padding: 3.6%;
+    top: 520px;
+}
+
+.lower h1 {
+    color: #94A08F;
+    font-size: 4rem;
+    position: relative;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/* second-page */
+
+.second-page {
+    position: relative;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.features {
+    width: 100%;
+}
+
+.head {
+    position: absolute;
+    top: 20px;
+    text-decoration: underline;
+    font-size: 4.5rem;
+    color: #94A08F;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    position: absolute;
+    top: 19%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    width: 90%
+}
+
+.img {
+    height: 280px;
+    width: 100%;
+}
+.container ul,h3 {
+    position: relative;
+    left: 15px;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+}
+
+.circle-1 {
+    position: absolute;
+    left: 50%;
+    opacity: 0.4;
+    top: 15px;
+    border: 20px solid #102312;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.circle-2 {
+    position: absolute;
+    right: 50%;
+    opacity: 0.4;
+    top: 15px;
+    border: 20px solid #102312;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.low {
+    position: absolute;
+    top: 90%;
+    overflow: hidden;
+    width: 100vh;
+    width: 100%;
+    height: 150px;
+    background-color: #102312;
+}
+
+.low h2 {
+    position: relative;
+    left: 60px;
+    top: 25%;
+    font-size: 3rem;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    color: #738027;
+}
+
+/* third-page  */
+
+.third-page {
+    min-height: 100vh;
+    background-color: #929B5E;
+}
+
+.heading {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h2 {
+    font-size: 2rem;
+}
+
+.left {
+    position: relative;
+    left: 8%;
+    text-decoration: underline;
+    margin: auto 0;
+    color: #6F793E;
+    font-family: "Alice", sans-serif;
+    font-weight: 900;
+}
+
+.right {
+    position: relative;
+    right: 8%;
+    text-decoration: underline;
+    margin: auto 0;
+    color: #6F793E;
+    font-family: "Alice", sans-serif;
+    font-weight: 900;
+}
+
+.middle {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.text{
+    position: relative;
+    top: 80px;
+    margin: 0 auto 0 115px;
+    min-height: 50%;
+    width: 85%;
+    /* border: 3px solid #6F793E; */
+    padding: 0;
+}
+
+.quotes {
+    position: relative;
+    height: 30px;
+}
+
+.q-2 {
+    float: right;
+    transform: rotate(180deg);
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+}
+
+.q-1 {
+    position: relative;
+    top: 90px;
+    left: 80px;
+}
+
+.words {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    color: #384205;
+    letter-spacing: 7px;
+    font-size: 2.4rem;
+    text-shadow: 2px 3px 4px #384205;
+}
+
+.words-1 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.9rem;
+    color: #384205;
+    letter-spacing: 7px;
+    word-spacing: 9px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px #384205;
+    text-decoration: underline 1px;
+    text-decoration-thickness: 1.1px;
+}
+
+.line {
+    background-color: #6F793E;
+    height: 5px;
+    position: relative;
+    right: 24px;
+    top: 15px;
+}
+
+.last {
+    display: flex;
+    margin: 130px auto;
+    height: 200px;
+    width: 90%;
+    border: 3px solid #6F793E;
+}
+
+.b1 {
+    width: 50%;
+    border-right: 3px solid #6F793E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.b-1 {
+    height: 40px;
+    width: 50%;
+    border: 2px solid #5F672F;
+    background-color: #6F793E;
+    color: #191E01;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    letter-spacing: 12px;
+}
+
+.b-2 {
+    height: 80px;
+    width: 40%;
+    border: 2px solid #5F672F;
+    background-color: #6F793E;
+    color: #191E01;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    letter-spacing: 11px;
+}
+
+.b-1:hover {
+    background-color: #5a6526;
+    border: 2px solid #474e1c;
+}
+
+.b-2:hover {
+    background-color: #5a6526;
+    border: 2px solid #474e1c;
+}
+
+.b-1:active {
+    background-color: #636b3c;
+}
+
+.b-2:active {
+    background-color: #636b3c;
+}
